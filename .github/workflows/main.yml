@@ -11,7 +11,7 @@ on:
         - name: Code Checkout
           uses: actions/checkout@v4
         
-        -name: Maven Build
+        - name: Maven Build
           run: mvn install
     Testing:
       runs-on: ubuntu-latest
@@ -20,8 +20,8 @@ on:
         - name: Code Checkout
           uses: actions/checkout@v4
         
-        -name: Run tests on main branch
+        - name: Run tests on main branch
           run: mvn test
         
-        -name: Checkstyle
+        - name: Checkstyle
           run: mvn checkstyle:checkstyle
