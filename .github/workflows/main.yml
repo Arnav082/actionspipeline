@@ -1,11 +1,11 @@
 name: Build Job
 on: 
-  #push:
-  #  branches: 
-  #    - main
-  pull_request:
-    branches:
+  push:
+    branches: 
       - main
+  #pull_request:
+  #  branches:
+  #    - main
     
 
   #pull_request:
