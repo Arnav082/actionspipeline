@@ -38,8 +38,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact-app
-          path: actionspipeline/target/actions2.war
-
+          path: target/*.war
+          
       - name: notify if build fails
         if: failure()
         run: echo "Build is failed."
